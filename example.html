@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>The Deepak Sai Vighnesh</title>
+</head>
+<body>
+    <script type="text/javascript">
+        function my_fun() {
+            var n = prompt("Enter the value of n");
+            n = parseInt(n);  // Convert n to an integer
+            var sum = 0;  // Initialize sum
+            
+            for (var i = 0; i < n; i++) {  // Loop through first 'n' numbers
+                if (i % 2 == 0) {  // Check if the number is even
+                    sum += i;  // Add the even number to sum
+                }
+            }
+
+            document.write("<br>The sum of first " + n + " even numbers is: " + sum + "<br>");
+
+            var a = prompt("Enter the value of a");
+            a = parseInt(a);  // Convert a to integer
+            var b = 13;  // Fixed value for b
+            var num = a * b;  // Multiplication
+
+            document.write("The multiplication of a and b (a * 13) is: " + num + "<br>");
+            document.write("There is an example of JavaScript operations.<br>");
+        }
+
+        // Initial Document write
+        document.write("<h1>This is Deepak</h1>");
+
+        // Get the value of 'a' from user
+        var a = prompt("Enter the value of a");
+        a = parseInt(a); // Convert input to an integer
+        
+        // Predefined value for b
+        var b = 13;
+
+        // Add a + b
+        var c = a + b;
+
+        // Display the result
+        document.write("<h2>Addition</h2>");
+        document.write("Result of a + 13 is: " + c + "<br><br>");
+
+        // Calling the function my_fun() to perform sum and multiplication
+        my_fun();
+    </script>
+</body>
+</html>
